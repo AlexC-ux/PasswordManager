@@ -39,7 +39,7 @@ namespace PasswordManager
             DesEx.GenerateKey();
             byte[] key = DesEx.Key;
 
-            Properties.Settings.Default.pos = new Random().Next(0,key.Length-1);
+            //Properties.Settings.Default.pos = new Random().Next(0,key.Length-1);
 
             byte[] nb = new byte[1];
             new Random().NextBytes(nb);
@@ -48,7 +48,7 @@ namespace PasswordManager
             Properties.Settings.Default.oldbyte = key[Properties.Settings.Default.pos];
             Properties.Settings.Default.Save();
 
-            key[Properties.Settings.Default.pos] = Properties.Settings.Default.newbyte;
+            //key[Properties.Settings.Default.pos] = Properties.Settings.Default.newbyte;
 
 
             File.WriteAllBytes(Path.Combine(dir,"key"),key);
