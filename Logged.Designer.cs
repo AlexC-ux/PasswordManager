@@ -49,11 +49,11 @@ namespace PasswordManager
             this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.textBox1.BackColor = System.Drawing.Color.OrangeRed;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.NavajoWhite;
             this.textBox1.Location = new System.Drawing.Point(12, 95);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(342, 28);
+            this.textBox1.Size = new System.Drawing.Size(342, 24);
             this.textBox1.TabIndex = 6;
             // 
             // button5
@@ -89,33 +89,35 @@ namespace PasswordManager
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label4.Location = new System.Drawing.Point(12, 325);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 25);
+            this.label4.Size = new System.Drawing.Size(69, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "Passw:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label3.Location = new System.Drawing.Point(12, 248);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 25);
+            this.label3.Size = new System.Drawing.Size(62, 24);
             this.label3.TabIndex = 9;
             this.label3.Text = "Login:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label2.Location = new System.Drawing.Point(12, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 25);
+            this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "Source:";
             // 
@@ -140,11 +142,11 @@ namespace PasswordManager
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label1.Location = new System.Drawing.Point(12, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 25);
+            this.label1.Size = new System.Drawing.Size(125, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Select source";
             // 

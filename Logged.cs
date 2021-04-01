@@ -28,6 +28,7 @@ namespace PasswordManager
         public Logged()
         {
             InitializeComponent();
+            this.Deactivate += new EventHandler(Logged_FormDeactivated);
         }
 
         private void Logged_Load(object sender, EventArgs e)
@@ -75,6 +76,12 @@ namespace PasswordManager
 
         }
 
+        private void Logged_FormDeactivated(object sender, EventArgs e)
+        {
+            label2.Text = "Source:";
+            label3.Text = "Login:";
+            label4.Text = "Passw:";
+        }
         private void Logged_FormClosing(object sender, FormClosingEventArgs e)
         {
            
@@ -96,14 +103,7 @@ namespace PasswordManager
             textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
-            if (File.Exists(Path.Combine(dir, "data")))
-            {
-
-                label2.Hide();
-                label3.Hide();
-                label4.Hide();
-
-            }
+            
 
             
 
@@ -175,6 +175,27 @@ namespace PasswordManager
         {
             DesAlg.EncrypDataFile();
             Application.ExitThread();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            if (label3.Text.Split(':')[1].Length>0)
+            {
+                Clipboard.Clear();
+                Clipboard.SetText(label3.Text.Split(':')[1]);
+                MessageBox.Show("Login copied to the clipboard");
+            }
+            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if (label3.Text.Split(':')[1].Length > 0)
+            {
+                Clipboard.Clear();
+                Clipboard.SetText(label4.Text.Split(':')[1]);
+                MessageBox.Show("Password copied to the clipboard");
+            }
         }
     }
 }
