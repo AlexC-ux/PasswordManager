@@ -19,8 +19,14 @@ namespace PasswordManager
         
         public Des()
         {
+            
             if (!(File.Exists(Path.Combine(dir,"key"))&&File.Exists(Path.Combine(dir,"IV"))))
             {
+                if (!Directory.Exists(@"C:\Program Files\PasswordManager"))
+                {
+                    Directory.CreateDirectory(@"C:\Program Files\PasswordManager");
+                }
+                File.Create(@"C:\Program Files\PasswordManager\data");
                 CreateKeys();
             }
             else

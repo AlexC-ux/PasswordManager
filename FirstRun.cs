@@ -68,11 +68,6 @@ namespace PasswordManager
 
         private void FirstRun_Activated(object sender, EventArgs e)
         {
-            
-            Form1.ActiveForm.Location = new Point(strt_x, strt_y);
-
-            strt_x = Form.ActiveForm.Location.X;
-            strt_y = Form.ActiveForm.Location.Y;
             pictureBox2.Width = pictureBox2.Height; 
         }
 

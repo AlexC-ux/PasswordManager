@@ -182,7 +182,7 @@ namespace PasswordManager
             if (label3.Text.Split(':')[1].Length>0)
             {
                 Clipboard.Clear();
-                Clipboard.SetText(label3.Text.Split(':')[1]);
+                Clipboard.SetText(label3.Text.Split(' ')[1]);
                 MessageBox.Show("Login copied to the clipboard");
             }
             
@@ -193,7 +193,7 @@ namespace PasswordManager
             if (label3.Text.Split(':')[1].Length > 0)
             {
                 Clipboard.Clear();
-                Clipboard.SetText(label4.Text.Split(':')[1]);
+                Clipboard.SetText(label4.Text.Split(' ')[1]);
                 MessageBox.Show("Password copied to the clipboard");
             }
         }
