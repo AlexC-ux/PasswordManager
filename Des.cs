@@ -22,11 +22,11 @@ namespace PasswordManager
             
             if (!(File.Exists(Path.Combine(dir,"key"))&&File.Exists(Path.Combine(dir,"IV"))))
             {
-                if (!Directory.Exists(@"C:\Program Files\PasswordManager"))
+                if (!Directory.Exists(dir))
                 {
-                    Directory.CreateDirectory(@"C:\Program Files\PasswordManager");
+                    Directory.CreateDirectory(dir);
                 }
-                File.Create(@"C:\Program Files\PasswordManager\data");
+                File.Create(Path.Combine(dir,"data"));
                 CreateKeys();
             }
             else

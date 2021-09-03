@@ -84,13 +84,7 @@ namespace PasswordManager
         }
         private void Logged_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
-           
-
             textBox1.AutoCompleteCustomSource = new AutoCompleteStringCollection();
-            
-
-            //Application.Exit();
         }
 
         private void Logged_Activated(object sender, EventArgs e)
@@ -101,18 +95,7 @@ namespace PasswordManager
 
             textBox1.AutoCompleteCustomSource = auCompl;
             textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
-
-            
-
-            
-
-
-
-
-            
-
-            
+            textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
